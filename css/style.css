@@ -1,0 +1,53 @@
+/*Imports*/
+@import url(./headerStyles.css);
+@import url(./featuresStyles.css);
+@import url(./coffeeCarousel.css);
+
+
+/*General styles*/
+
+*,
+*::before,
+*::after {
+	padding: 0;
+	margin: 0;
+	border: 0;
+	box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	margin: 0;
+	font-weight: inherit;
+	font-size: inherit;
+}
+
+a {
+	text-decoration: none;
+}
+
+.wrapper {
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+	min-height: 100%;
+}
+
+ul, ol, li {
+	list-style: none;
+}
+
+[class*="__container"] {
+	max-width: 1404px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+
+body, html {
+	scroll-behavior: smooth;
+}
+
+/*Other styles*/
+
+button{
+	cursor: pointer;
+}

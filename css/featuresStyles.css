@@ -1,0 +1,49 @@
+.feature__container{
+	text-align: center;
+	padding: 70px;
+}
+
+.subtitle-feature{
+	font-family: Nunito;
+	font-size: 20px;
+	font-weight: 600;
+	line-height: 24px;
+	color: #415167;
+}
+
+.title-feature{
+	font-family: Montserrat;
+	font-size: 30px;
+	font-weight: 900;
+	line-height: 34px;
+	color: #415167;
+}
+
+.feature-items{
+	margin: 72px 0 0 0;
+	display: flex;
+	flex-direction: row;
+	justify-items: center;
+	align-items: center;
+	justify-content: space-around;
+}
+
+.feature-item{
+	height: 247px;
+	width: 226px;
+}
+
+.feature-item-title{
+	font-family: Nunito;
+	font-size: 24px;
+	font-weight: 700;
+	line-height: 28px;
+	padding: 41px 0 12px 0;
+}
+
+.feature-item-descr{
+	font-family: Nunito;
+	font-size: 16px;
+	font-weight: 300;
+	line-height: 22px;
+}
