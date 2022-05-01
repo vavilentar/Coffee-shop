@@ -6,6 +6,10 @@
 	box-shadow: 0px 4px 24px 0px #CDCDCD80;
 	background-color: white;
 	border-radius: 15px;
+	transition: all 0.3s ease-in-out;
+}
+.cooffee-carousel-tab-item:hover{
+	transform: scale(1.1);
 }
 
 .coffee-carousel{
@@ -20,21 +24,21 @@
 	padding: 42px 0 0 44px;
 	width: 325px;
 }
-.coffee-price {
+.coffee-price, .gold-price {
 	font-family: Nunito;
 	font-size: 20px;
 	font-weight: 600;
 	line-height: 24px;
 	color: #C7A17A;
 }
-.coffee-name {
+.coffee-name, .gold-name {
 	font-family: Nunito;
 	font-size: 24px;
 	font-weight: 700;
 	line-height: 28px;
 	padding: 8px 0 24px 0;
 }
-.coffee-descr {
+.coffee-descr, .gold-descr {
 	font-family: Nunito;
 	font-size: 16px;
 	font-weight: 300;
@@ -44,7 +48,7 @@
 .cc-buttons {
 	align-items: center;
 }
-.coffee-buy-btn {
+.coffee-buy-btn, .gold-btn {
 	height: 32px;
 	width: 134px;
 	border-radius: 30px;
@@ -55,8 +59,20 @@
 	font-weight: 700;
 	line-height: 22px;
 	color: white;
+	transition: all .3s ease-in-out;
 }
-.coffee-details-link {
+.gold-btn:hover{
+	color: black;
+	background-color:white;
+	border: 1px solid rgba(0, 0, 0, 0.445);
+}
+.coffee-buy-btn:hover{
+	color: black;
+	background-color:white;
+	border: 1px solid rgba(0, 0, 0, 0.445);
+}
+
+.coffee-details-link, .gold-link {
 	margin-left: 18px;
 	font-family: Nunito;
 	font-size: 16px;
@@ -65,7 +81,6 @@
 }
 
 .blue-print{
-	height: 890px;
 	width: 384px;
 	background-color:#415167;
 }
@@ -89,12 +104,6 @@
 	scroll-snap-type: unset;
 }
 
-/* li {
-	scroll-snap-align: center;
-	display: inline-block;
-	border-radius: 3px;
-	font-size: 0;
-} */
 
 .blue-print{
 	height: 800px;
