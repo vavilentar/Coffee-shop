@@ -1,4 +1,5 @@
 const slider = document.querySelector('.gallery');
+const secSlider = document.querySelector('.slides-gallery')
 const tl = gsap.timeline({defaults: {duration: 0.75, ease: "power2.out"}});
 let isDown = false;
 let startX;
@@ -26,6 +27,30 @@ slider.addEventListener('mousemove', e => {
   const SCROLL_SPEED = 2;
   const walk = (x - startX) * SCROLL_SPEED;
   slider.scrollLeft = scrollLeft - walk;
+});
+
+
+secSlider.addEventListener('mousedown', e => {
+  isDown = true;
+  secSlider.classList.add('active');
+  startX = e.pageX - secSlider.offsetLeft;
+  scrollLeft = secSlider.scrollLeft;
+});
+secSlider.addEventListener('mouseleave', _ => {
+  isDown = false;
+  secSlider.classList.remove('active');
+});
+secSlider.addEventListener('mouseup', _ => {
+  isDown = false;
+  secSlider.classList.remove('active');
+});
+secSlider.addEventListener('mousemove', e => {
+  if (!isDown) return;
+  e.preventDefault();
+  const x = e.pageX - secSlider.offsetLeft;
+  const SCROLL_SPEED = 2;
+  const walk = (x - startX) * SCROLL_SPEED;
+  secSlider.scrollLeft = scrollLeft - walk;
 });
 
 const toggleGift = document.querySelectorAll('.giftcard-toggle-item');
